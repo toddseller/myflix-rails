@@ -16,8 +16,10 @@
 /tmp/*
 !/log/.keep
 !/tmp/.keep
+/logfile
 
 /node_modules
 /yarn-error.log
 
 .byebug_history
+.env

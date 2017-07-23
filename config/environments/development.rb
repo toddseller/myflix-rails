@@ -27,7 +27,18 @@ Rails.application.configure do
   end
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
+  # Configure smtp email
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address:              'just90.justhost.com',
+    port:                 465,
+    domain:               'first-aid.online',
+    user_name:            ENV['EMAIL_ADDRESS'],
+    password:             ENV['EMAIL_SECRET'],
+    authentication:       :login,
+    tls:                  true
+  }
 
   config.action_mailer.perform_caching = false
 
