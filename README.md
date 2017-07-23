@@ -1,24 +1,5 @@
-# README
+# Rails-MMDb
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This project is a rebuilding of my initial Dev Bootcamp Phase 2 passion project
+using Rails. My intent is to use my passion project as a guide to build out the
+backend using Rails, Node, and Python.
