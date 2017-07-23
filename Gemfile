@@ -20,8 +20,8 @@ gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use HAML
-gem 'haml'
-gem "haml-rails", "~> 0.9"
+gem 'haml', git: 'https://github.com/haml/haml'
+# gem "haml-rails", "~> 0.9"
 # Use Devise for password encryption
 gem 'devise'
 # See https://github.com/rails/execjs#readme for more supported runtimes
