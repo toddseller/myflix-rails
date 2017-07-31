@@ -8,12 +8,10 @@
         .form-group
           .field
             = f.label :email
-            %br/
             = f.email_field :email, autofocus: true, class: 'form-control'
         .form-group
           .field
             = f.label :password
-            %br/
             = f.password_field :password, autocomplete: "off", class: 'form-control'
           - if devise_mapping.rememberable?
             %fieldset.form-group
