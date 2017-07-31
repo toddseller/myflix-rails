@@ -30,10 +30,11 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = true
   # Configure smtp email
   config.action_mailer.delivery_method = :smtp
+  config.action_mailer.default_url_options = { host: 'localhost:3000' }
   config.action_mailer.smtp_settings = {
     address:              'just90.justhost.com',
     port:                 465,
-    domain:               'first-aid.online',
+    domain:               ENV['MAIL_HOST'],
     user_name:            ENV['EMAIL_ADDRESS'],
     password:             ENV['EMAIL_SECRET'],
     authentication:       :login,

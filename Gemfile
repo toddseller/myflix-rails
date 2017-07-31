@@ -28,13 +28,23 @@ gem 'devise'
 # gem 'therubyracer', platforms: :ruby
 # User Friendly_id for prettier URLs
 gem 'friendly_id'
+# Using Bootstrap to simplify some styling
+gem 'bootstrap', '~> 4.0.0.alpha6'
+# Bootstrap requires Tether
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3'
+end
 
+# Use jQuery
+gem 'jquery-rails'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
+# Use Sidekiq to perform jobs asynchronously
+gem 'sidekiq'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password

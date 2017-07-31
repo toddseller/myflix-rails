@@ -1,3 +1,108 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$red: #ed2517;
+$black: #2b2b2b;
+$white: #f3f3f3;
+
+body {
+  width: 100vw;
+  margin: 0 auto;
+  background: $black;
+}
+
+.main-logo {
+  display: block;
+  width: 600px;
+  margin: auto;
+  margin-top: 350px;
+}
+
+.links {
+  a {
+    padding: 40px;
+  }
+
+  :-webkit-any-link {
+    color: $white;
+    text-decoration: none;
+    transition: color .2s;
+  }
+
+  margin-top: 150px;
+  display: inline-block;
+  width: 100vw;
+  text-align: center;
+
+  :hover {
+    color: $red;
+    text-decoration: none;
+    transition: color .2s;
+  }
+}
+
+.logo-header {
+  padding-top: 40px;
+  height: 248px;
+  background-color: $red;
+
+  img {
+    display: block;
+    margin: 0 auto;
+    height: 60px;
+    width: auto;
+  }
+}
+
+.sign-in {
+  margin-top: -108px;
+  padding: 30px 40px;
+  background: $white;
+  border-radius: 4px;
+
+  h1 {
+    font-size: 3.4rem;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .field {
+    label {
+      color: $black;
+    }
+  }
+
+  a {
+    color: $black;
+    transition: color .2s;
+
+  }
+
+}
+
+a:hover {
+  color: $red;
+  text-decoration: none;
+  transition: color .2s;
+}
+
+fieldset {
+  padding-top: .625em;
+}
+
+.form-control:focus {
+  border-color: $red;
+  outline: 0;
+  box-shadow: inset 0 .05em .05em rgba(0, 0, 0, 0.075), 0 0 .5em rgba($red, 0.6);
+}
+
+.alert {
+  p {
+    margin-bottom: 0 !important;
+    text-align: center;
+  }
+}
+
+.field_with_errors {
+  display: inline;
+}

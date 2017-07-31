@@ -10,7 +10,9 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # POST /resource
   def create
     @user = User.new(params[:user].permit(:first_name, :last_name, :user_name, :email, :password))
-    render 'users/show'
+    if @user.save
+      redirect_to(after_sign_in_path_for(resource))
+    end
   end
 
   # GET /resource/edit
