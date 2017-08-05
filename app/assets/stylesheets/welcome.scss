@@ -1,109 +1,160 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-$red: #ed2517;
-$black: #2b2b2b;
-$white: #f3f3f3;
+.cta
+{
+    position: relative;
+    z-index: 3;
 
-body {
-  width: 100vw;
-  margin: 0 auto;
-  background: $black;
-  font-family: 'Open Sans', sans-serif;
+    vertical-align: middle;
 }
+.wrapper
+{
+    width: 100vw;
+    height: 93vh;
+    margin: 0;
+    padding: 0;
 
-.main-logo {
-  display: block;
-  width: 600px;
-  margin: auto;
-  margin-top: 350px;
-}
+    background: url('main_background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    .fake-nav
+    {
+        margin-top: 1.5em;
+        margin-left: 2.5em;
+        img
+        {
+            height: 50px;
+        }
+        .btn
+        {
+            position: absolute;
+            right: 0;
 
-.links {
-  a {
-    padding: 40px;
-  }
-
-  :-webkit-any-link {
-    color: $white;
-    text-decoration: none;
-    transition: color .2s;
-  }
-
-  margin-top: 150px;
-  display: inline-block;
-  width: 100vw;
-  text-align: center;
-
-  :hover {
-    color: $red;
-    text-decoration: none;
-    transition: color .2s;
-  }
-}
-
-.logo-header {
-  padding-top: 40px;
-  height: 248px;
-  background-color: $red;
-
-  img {
-    display: block;
-    margin: 0 auto;
-    height: 60px;
-    width: auto;
-  }
-}
-
-.sign-in {
-  margin-top: -108px;
-  padding: 30px 40px;
-  background: $white;
-  border-radius: 4px;
-
-  h1 {
-    font-size: 3.4rem;
-    text-align: center;
-    padding-bottom: 20px;
-  }
-
-  .field {
-    label {
-      color: $black;
+            margin-right: 2.5em;
+        }
     }
-  }
+    .cta
+    {
+        position: absolute;
+        bottom: 0;
 
-  a {
-    color: $black;
-    transition: color .2s;
+        width: 100%;
+        height: 50%;
 
-  }
+        text-align: center;
 
+        @include lg
+        {
+            text-align: left;
+        }
+        @include xl
+        {
+            text-align: left;
+        }
+        h1
+        {
+            font-size: 3.5rem;
+            font-weight: 700;
+
+            color: $white;
+
+            @include lg
+            {
+                font-size: 4.5rem;
+
+                padding-left: 2.5rem;
+
+
+            }
+            @include xl
+            {
+                font-size: 4.5rem;
+
+                padding-left: 2.5rem;
+
+
+            }
+        }
+        p
+        {
+            font-size: 1.75rem;
+
+            margin-top: .75em;
+
+
+            color: $white;
+
+            @include lg
+            {
+                padding-left: 2.5rem;
+
+
+            }
+            @include xl
+            {
+                padding-left: 2.5rem;
+
+
+            }
+        }
+        a
+        {
+            font-size: 2.5rem;
+
+            padding: .75em 2em;
+
+            @include lg
+            {
+                font-size: 1rem;
+
+                padding: .5em 1em;
+                margin-left: 2.5rem;
+
+
+            }
+            @include xl
+            {
+                font-size: 1rem;
+
+                padding: .5em 1em;
+                margin-left: 2.5rem;
+
+
+            }
+        }
+    }
 }
 
-a:hover {
-  color: $red;
-  text-decoration: none;
-  transition: color .2s;
+.main-logo
+{
+    display: block;
+
+    width: 600px;
+    margin: auto;
+    margin-top: 350px;
 }
 
-fieldset {
-  padding-top: .625em;
-}
+.links
+{
+    display: inline-block;
 
-.form-control:focus {
-  border-color: $red;
-  outline: 0;
-  box-shadow: inset 0 .05em .05em rgba(0, 0, 0, 0.075), 0 0 .5em rgba($red, 0.6);
-}
+    width: 100vw;
+    margin-top: 150px;
 
-.alert {
-  p {
-    margin-bottom: 0 !important;
     text-align: center;
-  }
-}
+    a
+    {
+        padding: 40px;
+    }
+    :-webkit-any-link
+    {
+        transition: color .2s;
+        text-decoration: none;
 
-.field_with_errors {
-  display: inline;
+        color: $offWhite;
+    }
+    :hover
+    {
+        transition: color .2s;
+        text-decoration: none;
+
+        color: $red;
+    }
 }

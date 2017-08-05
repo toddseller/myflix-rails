@@ -1,4 +1,10 @@
-=image_tag "logo_red.svg", class: 'main-logo'
-.links
-  =link_to('Sign In', new_user_session_path)
-  =link_to('Sign Up', new_user_registration_path)
+.container-fluid
+  .row.align-items-center.no-gutter
+    .col.wrapper
+      .fake-nav
+        = link_to image_tag('logo_red.svg'), root_path
+        = link_to 'Sign in', new_user_session_url, class: 'btn btn-danger'
+      .cta
+        %h1 Your movies, your way.
+        %p CREATE YOUR MOVIE DATABASE ONLINE
+        = link_to 'JOIN FOR FREE TODAY', new_user_registration_url, class: 'btn btn-danger'

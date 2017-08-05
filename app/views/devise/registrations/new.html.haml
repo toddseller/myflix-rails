@@ -1,6 +1,6 @@
 .container-fluid
-  .row.logo-header
-    =image_tag "logo_white.svg", class: 'sign-up-logo'
+  .row.logo-header.justify-content-sm-center
+    = link_to image_tag('logo_white.svg'), root_path, class: 'sign-up-logo'
   .row.justify-content-sm-center
     .col-lg-5.col-sm-10.sign-in
       %h1 Sign up

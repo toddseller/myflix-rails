@@ -1,0 +1,29 @@
+@mixin xs {
+  @media (max-width: #{$xs-width}) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: #{$xs-width + 1px}) and (max-width: #{$sm-width}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$sm-width + 1px}) and (max-width: #{$md-width}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$md-width + 1px}) and (max-width: #{$lg-width}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: #{$xl-width}) {
+    @content;
+  }
+}

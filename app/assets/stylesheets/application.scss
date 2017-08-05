@@ -12,6 +12,12 @@
  *
  */
 // Custom bootstrap variables must be set or imported *before* bootstrap.
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 @import 'bootstrap';
+@import 'variables';
+@import 'mixins';
+@import 'overrides';
+@import 'layout';
+@import 'navigation';
+@import 'devise/devise_forms';
 @import 'welcome';

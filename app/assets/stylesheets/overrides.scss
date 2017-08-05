@@ -1,0 +1,14 @@
+.btn-danger
+{
+    border-color: $red;
+    background-color: $red;
+    &:hover
+    {
+        border-color: $redHover;
+        background-color: $redHover;
+    }
+    &:focus
+    {
+        color: $white;
+    }
+}
