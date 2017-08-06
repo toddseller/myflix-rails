@@ -43,7 +43,7 @@
         content: '';
 
         opacity: 1;
-        background-image: linear-gradient(to top,$black,transparent);
+        background-image: linear-gradient(to top,$black 15%,transparent);
         @include lg {
           opacity: .85;
         background-image: linear-gradient(to right,$black,transparent);
