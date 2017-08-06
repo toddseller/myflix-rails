@@ -4,9 +4,8 @@
     height: 100vh;
     margin: 0;
     padding: 0;
-
-    background: image-url('main_background.jpg') no-repeat left center fixed;
-    background-size: cover;
+    // background: image-url('main_background.jpg') no-repeat left center fixed;
+    // background-size: cover;
     &:before
     {
         position: absolute;
@@ -53,16 +52,23 @@
             background-image: linear-gradient(to right,$black 5%,transparent);
         }
     }
+    #background {
+        width: 100vw;
+        height: 100vh;
+    }
     .fake-nav
     {
-        position: relative;
+        position: absolute;
         z-index: 3;
+        top: 0;
 
+        width: 100vw;
         margin-top: 1.5em;
-        margin-left: 2.5em;
+
         img
         {
             height: 80px;
+            margin-left: 2.5em;
 
             @include lg
             {
