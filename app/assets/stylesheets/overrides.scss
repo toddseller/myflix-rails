@@ -1,5 +1,9 @@
 .btn-danger
 {
+    font-family: 'Open Sans', sans-serif;
+
+    letter-spacing: .125rem;
+
     border-color: $red;
     background-color: $red;
     &:hover
