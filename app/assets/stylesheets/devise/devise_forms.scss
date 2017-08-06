@@ -36,23 +36,26 @@
     {
         label
         {
-            color: $offBlack;
+            color: $off-black;
         }
     }
     a
     {
-        transition: color .2s;
+        transition: color $fade-transition;
 
-        color: $offBlack;
+        color: $off-black;
+        &:hover
+        {
+            transition: color $fade-transition;
+            text-decoration: none;
+
+            color: $red;
+        }
+        &:focus
+        {
+            text-decoration: none;
+        }
     }
-}
-
-a:hover
-{
-    transition: color .2s;
-    text-decoration: none;
-
-    color: $red;
 }
 
 fieldset

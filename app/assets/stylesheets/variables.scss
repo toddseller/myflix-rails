@@ -1,11 +1,10 @@
 //Colors
 
 $black: #000;
-$brand-danger: $red;
-$offBlack: #2b2b2b;
-$offWhite: #f3f3f3;
+$off-black: #2b2b2b;
+$off-white: #f3f3f3;
 $red: #e50914;
-$redHover: #f40612;
+$red-hover: #f40612;
 $white: #fff;
 
 //Devices
@@ -15,3 +14,5 @@ $md-width: 991px;
 $lg-width: 1199px;
 $xl-width: 1200px;
 
+//Transitions
+$fade-transition: .2s ease-in-out;
