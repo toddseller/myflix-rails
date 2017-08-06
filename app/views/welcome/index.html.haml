@@ -1,7 +1,6 @@
 .container-fluid
   .row.align-items-center.no-gutter
     .col.wrapper
-      = image_set_tag 'background_small.jpg', {'background_small.jpg'  => '1000w','background_large.jpg' => '1500w','main_background.jpg' => '1800w'}, sizes: '100vw', alt: 'background', id: 'background'
       .fake-nav
         = link_to image_tag('logo_red.svg'), root_path
         - if user_signed_in?

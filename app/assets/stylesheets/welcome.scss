@@ -4,8 +4,28 @@
     height: 100vh;
     margin: 0;
     padding: 0;
-    // background: image-url('main_background.jpg') no-repeat left center fixed;
-    // background-size: cover;
+
+    background-image: image-url('background_small.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    @include sm
+    {
+        background-image: image-url('background_large.jpg');
+    }
+    @include land
+    {
+        background-image: image-url('background_large.jpg');
+    }
+    @include lg
+    {
+        background-image: image-url('main_background.jpg');
+    }
+    @include xl
+    {
+        background-image: image-url('main_background.jpg');
+    }
     &:before
     {
         position: absolute;
@@ -18,15 +38,6 @@
 
         opacity: 1;
         background-image: linear-gradient(to bottom,$black,transparent 15%);
-
-        @include lg
-        {
-            background-image: none;
-        }
-        @include xl
-        {
-            background-image: none;
-        }
     }
     &:after
     {
@@ -52,23 +63,16 @@
             background-image: linear-gradient(to right,$black 5%,transparent);
         }
     }
-    #background {
-        width: 100vw;
-        height: 100vh;
-    }
     .fake-nav
     {
-        position: absolute;
+        position: relative;
         z-index: 3;
-        top: 0;
 
-        width: 100vw;
         margin-top: 1.5em;
-
+        margin-left: 2.5em;
         img
         {
             height: 80px;
-            margin-left: 2.5em;
 
             @include lg
             {
@@ -113,6 +117,10 @@
 
         text-align: center;
 
+        @include land
+        {
+            height: 60%;
+        }
         @include lg
         {
             height: 60%;
@@ -170,6 +178,10 @@
 
             padding: .75em 2em;
 
+            @include land
+            {
+                font-size: 1.5rem;
+            }
             @include lg
             {
                 font-size: 1rem;

@@ -27,3 +27,9 @@
     @content;
   }
 }
+
+@mixin land {
+  @media all and (orientation:landscape) {
+    @content;
+  }
+}
