@@ -3,6 +3,7 @@
   %head
     = render 'partials/favicon'
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "yes", :name => "apple-mobile-web-app-capable"}/
     %title MYFLIX
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
