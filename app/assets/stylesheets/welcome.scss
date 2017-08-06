@@ -60,16 +60,12 @@
                 font-size: 4.5rem;
 
                 padding-left: 2.5rem;
-
-
             }
             @include xl
             {
                 font-size: 4.5rem;
 
                 padding-left: 2.5rem;
-
-
             }
         }
         p
@@ -78,20 +74,15 @@
 
             margin-top: .75em;
 
-
             color: $white;
 
             @include lg
             {
                 padding-left: 2.5rem;
-
-
             }
             @include xl
             {
                 padding-left: 2.5rem;
-
-
             }
         }
         a
@@ -100,61 +91,22 @@
 
             padding: .75em 2em;
 
+            letter-spacing: .125rem;
+
             @include lg
             {
                 font-size: 1rem;
 
-                padding: .5em 1em;
                 margin-left: 2.5rem;
-
-
+                padding: .5em 1em;
             }
             @include xl
             {
                 font-size: 1rem;
 
-                padding: .5em 1em;
                 margin-left: 2.5rem;
-
-
+                padding: .5em 1em;
             }
         }
-    }
-}
-
-.main-logo
-{
-    display: block;
-
-    width: 600px;
-    margin: auto;
-    margin-top: 350px;
-}
-
-.links
-{
-    display: inline-block;
-
-    width: 100vw;
-    margin-top: 150px;
-
-    text-align: center;
-    a
-    {
-        padding: 40px;
-    }
-    :-webkit-any-link
-    {
-        transition: color .2s;
-        text-decoration: none;
-
-        color: $offWhite;
-    }
-    :hover
-    {
-        transition: color .2s;
-        text-decoration: none;
-
-        color: $red;
     }
 }
