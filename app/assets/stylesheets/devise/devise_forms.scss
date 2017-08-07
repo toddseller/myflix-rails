@@ -23,7 +23,7 @@
     padding: 30px 40px;
 
     border-radius: 4px;
-    background: $white;
+    background: $off-white;
     h1
     {
         font-size: 3.4rem;
@@ -31,6 +31,8 @@
         padding-bottom: 20px;
 
         text-align: center;
+
+        color: $off-black;
     }
     .field
     {
