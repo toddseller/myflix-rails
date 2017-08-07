@@ -1,5 +1,15 @@
+nav{
+  width: 100vw;
+  height: 5em;
+  margin: -1.5em 0 -2.5em 0;
+
+
+  background-image: linear-gradient(to bottom,$black 30%,transparent);
+
+}
 .navbar-brand
 {
+  padding: 0;
     img
     {
         height: 50px;

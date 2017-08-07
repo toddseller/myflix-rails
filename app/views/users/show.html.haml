@@ -1,8 +1,12 @@
-%h1
-  Welcome
-  = @user.first_name
-%p
-  Your user id is
-  = @user.id
-  I bet you're glad the URL just says
-  = @user.user_name
+.container
+  .row.welcome
+    .col-12
+      %h1
+        Welcome
+        = @user.first_name
+    .col-12
+      %p
+        Your user id is
+        = @user.id
+        I bet you're glad the URL just says
+        = @user.user_name
