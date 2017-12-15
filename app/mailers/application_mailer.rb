@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'test@example.com'
-  layout 'mailer'
+  default from: 'Tedflix <noreply@myflix.stream>'
+  layout 'tedflix_mailer'
 end
