@@ -153,7 +153,7 @@
                                     <tbody>
                                       <tr>
                                         <td style="background-color:#E70000;" width="2"> </td>
-                                        <td class="forName" valign="top" style="padding:0px 0px 0px 5px;font-family:Helvetica, Georgia, Arial, sans-serif;-webkit-text-size-adjust:none;font-size:16px;font-style:normal;line-height:16px;color:rgb(245, 245, 241);font-weight:normal;">For <%= fn %></td>
+                                        <td class="forName" valign="top" style="padding:0px 0px 0px 5px;font-family:Helvetica, Georgia, Arial, sans-serif;-webkit-text-size-adjust:none;font-size:16px;font-style:normal;line-height:16px;color:rgb(245, 245, 241);font-weight:normal;">For <%= @first_name %></td>
                                       </tr>
                                     </tbody>
                                   </table>
@@ -378,13 +378,13 @@
         </tr>
         <tr>
           <td class="privacy" style="font-family:Helvetica, Arial, sans-serif;-webkit-text-size-adjust:none;font-size:13px;color:rgb(179, 179, 179);padding:20px 0px 10px 0px;font-weight:lighter;line-height:18px;">
-            This informational email has been sent to you as part of your Tedflix membership. Please do not reply to this email, as we are unable to respond from this email address. If would you like to submit a request, please email <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top" style="color:#B3B3B3;text-decoration:underline;">me@tedroddy.net.</a>
+            This informational email has been sent to you as part of your Tedflix membership. Please do not reply to this email, as we are unable to respond from this email address. If would you like to submit a request, please email <a href="mailto:me@tedroddy.net?Subject=Request%20For%20New%20Content" target="_top" style="color:#B3B3B3;text-decoration:underline;">me@tedroddy.net.</a>
           </td>
         </tr>
         <tr>
           <td class="footerText" style="font-family:Helvetica, Arial, sans-serif;-webkit-text-size-adjust:none;font-size:13px;color:rgb(179,179, 179);padding:0px 0px 0px 0px;font-weight:lighter;line-height:18px;">
             <!--legal_content_footer-->
-            This message was mailed to <span class="iosnonlink"><a href="#" style="color:#B3B3B3; text-decoration:none;">[<%= email %>]</a></span> by Tedflix. </td>
+            This message was mailed to <span class="iosnonlink"><a href="#" style="color:#B3B3B3; text-decoration:none;">[<%= @email %>]</a></span> by Tedflix. </td>
           </tr>
           <tr>
             <td class="footerText" style="font-family:Helvetica, Arial, sans-serif;-webkit-text-size-adjust:none;font-size:13px;color:rgb(179, 179, 179);padding:0px 0px 0px 0px;font-weight:lighter;line-height:18px;"> Use of the Tedflix service and website is subject to our Terms of Use and Privacy Statement. </td>
