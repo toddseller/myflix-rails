@@ -1,4 +1,4 @@
-class TedflixMailer < ApplicationMailer::Base
+class TedflixMailer < ActionMailer::Base
   default from: 'Tedflix <noreply@myflix.stream>'
   layout 'tedflix_mailer'
 
