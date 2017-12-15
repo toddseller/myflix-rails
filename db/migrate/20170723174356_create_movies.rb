@@ -2,6 +2,7 @@ class CreateMovies < ActiveRecord::Migration[5.1]
   def change
     create_table :movies, id: :uuid do |t|
       t.text        :actors,          default: ''
+      t.string      :backdrop,        default: ''
       t.string      :director,        default: ''
       t.string      :display_title,   index: true, default: ''
       t.string      :file_name,       default: ''
@@ -21,7 +22,6 @@ class CreateMovies < ActiveRecord::Migration[5.1]
       t.string      :title,           null: false, default: ''
       t.integer     :tmdb_id
       t.belongs_to  :user,            type: :uuid, index: true
-      t.integer     :user_rating
       t.string      :writer,          default: ''
       t.string      :year,            default: ''
 

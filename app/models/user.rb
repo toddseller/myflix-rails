@@ -1,5 +1,6 @@
 class User < ApplicationRecord
   has_many :movies
+  has_many :ratings
 
   extend FriendlyId
   friendly_id :user_name, use: :slugged

@@ -11,8 +11,13 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # POST /resource
   def create
     @user = User.new(params[:user].permit(:first_name, :last_name, :user_name, :email, :password))
-    if @user.save
-      redirect_to(after_sign_in_path_for(resource))
+    respond_to do |format|
+      if @user.save
+        format.html { redirect_to(after_sign_in_path_for(resource), notice: 'User was successfully created.') }
+      else
+        format.html { render action: 'new' }
+        format.json { render json: @user.errors, status: :unprocessable_entity }
+      end
     end
   end
 

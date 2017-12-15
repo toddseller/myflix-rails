@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170725130930) do
+ActiveRecord::Schema.define(version: 20170814034514) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,16 +19,19 @@ ActiveRecord::Schema.define(version: 20170725130930) do
   create_table "catalogs", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
     t.integer "count", default: 0, null: false
     t.string "poster", default: "", null: false
+    t.string "slug"
     t.string "sort_name", default: "", null: false
     t.string "title", default: "", null: false
     t.integer "tmdb_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["slug"], name: "index_catalogs_on_slug"
     t.index ["tmdb_id"], name: "index_catalogs_on_tmdb_id"
   end
 
   create_table "movies", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
     t.text "actors", default: ""
+    t.string "backdrop", default: ""
     t.string "director", default: ""
     t.string "display_title", default: ""
     t.string "file_name", default: ""
@@ -48,7 +51,6 @@ ActiveRecord::Schema.define(version: 20170725130930) do
     t.string "title", default: "", null: false
     t.integer "tmdb_id"
     t.uuid "user_id"
-    t.integer "user_rating"
     t.string "writer", default: ""
     t.string "year", default: ""
     t.datetime "created_at", null: false
@@ -56,6 +58,16 @@ ActiveRecord::Schema.define(version: 20170725130930) do
     t.index ["display_title"], name: "index_movies_on_display_title"
     t.index ["slug"], name: "index_movies_on_slug"
     t.index ["user_id"], name: "index_movies_on_user_id"
+  end
+
+  create_table "ratings", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+    t.uuid "catalog_id"
+    t.uuid "user_id"
+    t.integer "stars"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["catalog_id"], name: "index_ratings_on_catalog_id"
+    t.index ["user_id"], name: "index_ratings_on_user_id"
   end
 
   create_table "users", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
