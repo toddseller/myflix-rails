@@ -1,5 +1,5 @@
 class TedflixMailer < ActionMailer::Base
-  default from: 'Tedflix <noreply@myflix.stream>'
+  default from: 'Tedflix <noreply@tedroddy.net>'
   layout 'mailer'
 
   def weekly_update(options = {})
