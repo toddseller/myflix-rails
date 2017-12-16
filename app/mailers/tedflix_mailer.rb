@@ -3,8 +3,8 @@ class TedflixMailer < ActionMailer::Base
   layout 'mailer'
 
   def weekly_update(options = {})
-    @first_name = [:name]
-    @email = [:email]
+    @first_name = options[:name]
+    @email = options[:email]
     mail(to: "#{@first_name} <#{@email}>", subject: "#{@first_name} we just added some shows you may like")
   end
 end
