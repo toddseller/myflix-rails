@@ -7,4 +7,16 @@ class TedflixMailer < ActionMailer::Base
     @email = options[:email]
     mail(to: "#{@first_name} <#{@email}>", subject: "#{@first_name} we just added some shows you may like")
   end
+
+  def star_wars(options = {})
+    @first_name = options[:name]
+    @email = options[:email]
+    mail(to: "#{@first_name} <#{@email}>", subject: "#{@first_name} return to a galaxy far, far away...")
+  end
+
+  def informational(options = {})
+    @first_name = options[:name]
+    @email = options[:email]
+    mail(to: "#{@first_name} <#{@email}>", subject: "#{@first_name} TEDLIX IS DOWN!?!")
+  end
 end
