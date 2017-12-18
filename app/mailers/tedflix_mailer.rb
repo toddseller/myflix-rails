@@ -23,6 +23,6 @@ class TedflixMailer < ActionMailer::Base
   def back_online(options = {})
     @first_name = options[:name]
     @email = options[:email]
-    mail(to "#{@first_name} <#{@email}", subject: "#{@first_name} We're Back!")
+    mail(to: "#{@first_name} <#{@email}", subject: "#{@first_name} We're Back!")
   end
 end
