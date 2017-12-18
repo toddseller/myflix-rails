@@ -2,19 +2,13 @@ class TedflixMailer < ActionMailer::Base
   default from: 'Tedflix <noreply@tedroddy.net>'
   layout 'mailer'
 
-  def weekly_update(options = {})
+  def for_you(options = {})
     @first_name = options[:name]
     @email = options[:email]
     mail(to: "#{@first_name} <#{@email}>", subject: "#{@first_name} we just added some shows you may like")
   end
 
-  def star_wars(options = {})
-    @first_name = options[:name]
-    @email = options[:email]
-    mail(to: "#{@first_name} <#{@email}>", subject: "#{@first_name} return to a galaxy far, far away...")
-  end
-
-  def informational(options = {})
+  def no_service(options = {})
     @first_name = options[:name]
     @email = options[:email]
     mail(to: "#{@first_name} <#{@email}>", subject: "#{@first_name} TEDLIX IS DOWN!?!")
@@ -25,4 +19,9 @@ class TedflixMailer < ActionMailer::Base
     @email = options[:email]
     mail(to: "#{@first_name} <#{@email}>", subject: "#{@first_name} We're Back!")
   end
+
+  def now_on(options = {})
+    @first_name = options[:name]
+    @email = options[:email]
+    mail(to: "#{@first_name} <#{@email}>", subject: "#{@first_name} Now on Tedflix")
 end
