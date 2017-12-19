@@ -24,4 +24,5 @@ class TedflixMailer < ActionMailer::Base
     @first_name = options[:name]
     @email = options[:email]
     mail(to: "#{@first_name} <#{@email}>", subject: "#{@first_name} Now on Tedflix")
+  end
 end
