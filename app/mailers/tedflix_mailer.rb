@@ -23,6 +23,12 @@ class TedflixMailer < ActionMailer::Base
   def now_on(options = {})
     @first_name = options[:name]
     @email = options[:email]
-    mail(to: "#{@first_name} <#{@email}>", subject: "#{@first_name} Now on Tedflix")
+    mail(to: "#{@first_name} <#{@email}>", subject: "Now on Tedflix")
+  end
+
+  def xmas(options = {})
+    @first_name = options[:name]
+    @email = options[:email]
+    mail(to: "#{@first_name} <#{@email}>", subject: "#{@first_name}, Spend Your Christmas with Tedflix")
   end
 end
