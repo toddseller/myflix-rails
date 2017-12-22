@@ -31,4 +31,10 @@ class TedflixMailer < ActionMailer::Base
     @email = options[:email]
     mail(to: "#{@first_name} <#{@email}>", subject: "#{@first_name}, Spend Your Christmas with Tedflix")
   end
+
+  def naughty(options = {})
+    @first_name = options[:name]
+    @email = options[:email]
+    mail(to: "#{@first_name} <#{@email}>", subject: "#{@first_name}, Get a little naughty with Tedflix")
+  end
 end
