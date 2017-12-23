@@ -38,9 +38,9 @@ class TedflixMailer < ActionMailer::Base
     mail(to: "#{@first_name} <#{@email}>", subject: "#{@first_name}, Get a little naughty with Tedflix")
   end
 
-  def test(options = {})
+  def new_year(options = {})
     @first_name = options[:name]
     @email = options[:email]
-    mail(to: "#{@first_name} <#{@email}>", subject: "#{@first_name} we just added some shows you may like")
+    mail(to: "#{@first_name} <#{@email}>", subject: "#{@first_name}, Scream in the New Year with Tedflix")
   end
 end
