@@ -24,7 +24,7 @@
 
   <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
   <!--[if !mso]><!-->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,500,700" rel="stylesheet">
   <!--<![endif]-->
 
   <!-- Web Font / @font-face : END -->
@@ -232,7 +232,9 @@
           <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
             <tr>
               <td style="padding: 30px 40px 30px 40px; text-align: center;">
-                <img src="http://bayaction2freeassange.org/wp-content/uploads/2019/04/email_logo.png" width="100%" alt="alt_text" border="0" style="height: auto; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                <a href="http://bayaction2freeassange.org">
+                  <img src="http://bayaction2freeassange.org/wp-content/uploads/2019/04/email_logo.png" width="100%" alt="alt_text" border="0" style="height: auto; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                </a>
               </td>
             </tr>
           </table>
@@ -244,7 +246,9 @@
       <tr>
         <!-- Bulletproof Background Images c/o https://backgrounds.cm -->
         <td>
-          <img src="http://bayaction2freeassange.org/wp-content/uploads/2019/04/D4fRAhIVUAA823E-2.jpg" width="100%" height="auto" alt="">
+          <a href="http://bayaction2freeassange.org/san-francisco/world-press-freedom-day-of-action/">
+            <img src="http://bayaction2freeassange.org/wp-content/uploads/2019/04/D4fRAhIVUAA823E-2.jpg" width="100%" height="auto" alt="">
+          </a>
         </td>
       </tr>
       <!-- HERO : END -->
@@ -255,7 +259,7 @@
           <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
             <tr>
               <td style="padding: 40px 40px 20px 40px; text-align: left;">
-                <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-size: 20px; line-height: 26px; color: #333333; font-weight: bold; text-transform: uppercase;">Join
+                <h1 style="margin: 0; font-family: 'Open Sans', sans-serif; font-size: 20px; line-height: 26px; color: #333333; font-weight: bold; text-transform: uppercase;">Join
                   us for World Press Freedom Day of Action</h1>
               </td>
             </tr>
@@ -372,11 +376,6 @@
 
                 <table align="center" style="text-align: center;">
                   <tr>
-                    <td>
-                      <a href="https://www.facebook.com/Free-Julian-Assange-112794885456369/">
-                        <img src="http://bayaction2freeassange.org/wp-content/uploads/2019/04/facebook@3x.png" width="32" height="" style="margin:0; padding:0 20px; border:none; display:block;" border="0" alt="facebook logo">
-                      </a>
-                    </td>
                     <td width="10">&nbsp;</td>
                     <td>
                       <a href="https://twitter.com/BayAssange">
@@ -399,27 +398,20 @@
         <td bgcolor="#ffffff">
           <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
             <tr>
-              <td style="padding: 40px 40px 10px 40px; font-family: sans-serif; font-size: 12px; line-height: 18px; color: #666666; text-align: center; font-weight:normal;">
-                <p style="margin: 0;">Bay Action Committee to Free Julian Assange</p>
-                <p style="margin: 0;">PO Box 720027 • San Francisco, CA 94172</p>
-              </td>
-            </tr>
-            <tr>
-              <td style="padding: 0px 40px 10px 40px; font-family: sans-serif; font-size: 12px; line-height: 18px; color: #666666; text-align: center; font-weight:normal;" class="footer">
+              <td style="padding: 40px 40px 10px 40px; font-family: sans-serif; font-size: 12px; line-height: 18px; color: #666666; text-align: center; font-weight:normal;" class="footer">
                 <p style="margin: 0;">This message was sent to [<%= @email %>] from Bay Action Committee to Free
                   Julian Assange.</p>
                 <p style="margin: 0;">If you would no longer like to receive these emails, please
-                  <a href="http://bayaction2freeassange.org/san-francisco/world-press-freedom-day-of-action?u=<%= @user_id %>">click
+                  <a href="http://bayaction2freeassange.org/unsubscribe?uuid=<%= @user_id %>">click
                     here to unsubscribe</a>.</p>
               </td>
             </tr>
             <tr>
               <td style="padding: 0px 40px 40px 40px; font-family: sans-serif; font-size: 12px; line-height: 18px; color: #666666; text-align: center; font-weight:normal;">
-                <p style="margin: 0;">Copyright &copy; 2019 <b>Bay Action Committee to Free Julian Assange</b>, All
-                  Rights Reserved.</p>
+                <p style="margin: 0;"><b>Bay Action Committee to Free Julian Assange</b></p>
+                <p style="margin: 0;">PO Box 720027 • San Francisco, CA 94172</p>
               </td>
             </tr>
-
           </table>
         </td>
       </tr>
