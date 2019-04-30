@@ -24,7 +24,7 @@
 
   <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
   <!--[if !mso]><!-->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,500" rel="stylesheet">
   <!--<![endif]-->
 
   <!-- Web Font / @font-face : END -->
@@ -50,7 +50,7 @@
 
     /* What it does: Centers email on Android 4.4 */
     div[style*="margin: 16px 0"] {
-      margin:0 !important;
+      margin: 0 !important;
     }
 
     /* What it does: Stops Outlook from adding extra spacing to tables. */
@@ -67,18 +67,19 @@
       table-layout: fixed !important;
       margin: 0 auto !important;
     }
+
     table table table {
       table-layout: auto;
     }
 
     /* What it does: Uses a better rendering method when resizing images in IE. */
     img {
-      -ms-interpolation-mode:bicubic;
+      -ms-interpolation-mode: bicubic;
     }
 
     /* What it does: A work-around for email clients meddling in triggered links. */
-    *[x-apple-data-detectors],	/* iOS */
-    .x-gmail-data-detectors, 	/* Gmail */
+    *[x-apple-data-detectors], /* iOS */
+    .x-gmail-data-detectors, /* Gmail */
     .x-gmail-data-detectors *,
     .aBn {
       border-bottom: 0 !important;
@@ -91,14 +92,15 @@
       line-height: inherit !important;
     }
 
-    /* What it does: Prevents Gmail from displaying an download button on large, non-linked images. */
+    /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
     .a6S {
       display: none !important;
       opacity: 0.01 !important;
     }
+
     /* If the above doesn't work, add a .g-img class to any image in question. */
     img.g-img + div {
-      display:none !important;
+      display: none !important;
     }
 
     /* What it does: Prevents underlining the button text in Windows 10 */
@@ -106,10 +108,16 @@
       text-decoration: none !important;
     }
 
+    .footer a,
+    .footer a:visited {
+      color: #dd5638 !important;
+    }
+
     /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
     /* Create one of these media queries for each additional viewport size you'd like to fix */
     /* Thanks to Eric Lepetit @ericlepetitsf) for help troubleshooting */
-    @media only screen and (min-device-width: 375px) and (max-device-width: 413px) { /* iPhone 6 and 6+ */
+    @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+      /* iPhone 6 and 6+ */
       .email-container {
         min-width: 375px !important;
       }
@@ -125,6 +133,7 @@
     .button-a {
       transition: all 100ms ease-in;
     }
+
     .button-td:hover,
     .button-a:hover {
       background: #555555 !important;
@@ -151,6 +160,7 @@
         max-width: 100% !important;
         direction: ltr !important;
       }
+
       /* And center justify these ones. */
       .stack-column-center {
         text-align: center !important;
@@ -164,6 +174,7 @@
         margin-right: auto !important;
         float: none !important;
       }
+
       table.center-on-narrow {
         display: inline-block !important;
       }
@@ -193,7 +204,8 @@
 
   <!-- Visually Hidden Preheader Text : BEGIN -->
   <div style="display:none;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;font-family: sans-serif;">
-    (Optional) This text will appear in the inbox preview, but not the email body. It can be used to supplement the email subject line or even summarize the email's contents. Extended text preheaders (~490 characters) seems like a better UX for anyone using a screenreader or voice-command apps like Siri to dictate the contents of an email. If this text is not included, email clients will automatically populate it using the text (including image alt text) at the start of the email's body.
+    On World Press Freedom Day Friday May 3, 2019 join the rallies and marches around the world and in San Francisco to
+    FREE Julian Assange and Chelsea Manning and all jailed journalists and whistleblowers.
   </div>
   <!-- Visually Hidden Preheader Text : END -->
 
@@ -220,7 +232,7 @@
           <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
             <tr>
               <td style="padding: 30px 40px 30px 40px; text-align: center;">
-                <img src="logo.png" width="57" height="13" alt="alt_text" border="0" style="height: auto; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
+                <img src="http://bayaction2freeassange.org/wp-content/uploads/2019/04/email_logo.png" width="600" alt="alt_text" border="0" style="height: auto; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555;">
               </td>
             </tr>
           </table>
@@ -231,10 +243,12 @@
       <!-- HERO : BEGIN -->
       <tr>
         <!-- Bulletproof Background Images c/o https://backgrounds.cm -->
-        <td background="background.png" bgcolor="#222222" align="center" valign="top" style="text-align: center; background-position: center center !important; background-size: cover !important;">
+        <td background="http://bayaction2freeassange.org/wp-content/uploads/2019/04/D4fRAhIVUAA823E-2.jpg" bgcolor="#222222" align="center" valign="top" style="height: 484px; text-align: center; background-position: center center !important; background-size: cover !important;">
           <!--[if gte mso 9]>
-          <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:680px; height:380px; background-position: center center !important;">
-            <v:fill type="tile" src="background.png" color="#222222" />
+          <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false"
+                  style="width:680px; height:484px; background-position: center center !important;">
+            <v:fill type="tile" src="http://bayaction2freeassange.org/wp-content/uploads/2019/04/D4fRAhIVUAA823E-2.jpg"
+                    color="#222222"/>
             <v:textbox inset="0,0,0,0">
           <![endif]-->
           <div>
@@ -243,57 +257,6 @@
               <tr>
                 <td align="center" valign="middle" width="500">
             <![endif]-->
-            <table role="presentation" border="0" cellpadding="0" cellspacing="0" align="center" width="100%" style="max-width:500px; margin: auto;">
-
-              <tr>
-                <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
-              </tr>
-
-              <tr>
-                <td align="center" valign="middle">
-
-                  <table>
-                    <tr>
-                      <td valign="top" style="text-align: center; padding: 60px 0 10px 20px;">
-
-                        <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-size: 30px; line-height: 36px; color: #ffffff; font-weight: bold;">OUR EVENT</h1>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td valign="top" style="text-align: center; padding: 10px 20px 15px 20px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #757575;">
-                        <p style="margin: 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                          tempor incididunt ut labore.</p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td valign="top" align="center" style="text-align: center; padding: 15px 0px 60px 0px;">
-
-                        <!-- Button : BEGIN -->
-                        <center>
-                          <table role="presentation" align="center" cellspacing="0" cellpadding="0" border="0" class="center-on-narrow" style="text-align: center;">
-                            <tr>
-                              <td style="border-radius: 50px; background: #26a4d3; text-align: center;" class="button-td">
-                                <a href="http://www.google.com" style="background: #26a4d3; border: 15px solid #26a4d3; font-family: 'Montserrat', sans-serif; font-size: 14px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 50px; font-weight: bold;" class="button-a">
-                                  <span style="color:#ffffff;" class="button-link">&nbsp;&nbsp;&nbsp;&nbsp;GET TICKETS&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                                </a>
-                              </td>
-                            </tr>
-                          </table>
-                        </center>
-                        <!-- Button : END -->
-
-                      </td>
-                    </tr>
-                  </table>
-
-                </td>
-              </tr>
-
-              <tr>
-                <td height="20" style="font-size:20px; line-height:20px;">&nbsp;</td>
-              </tr>
-
-            </table>
             <!--[if mso]>
             </td>
             </tr>
@@ -314,61 +277,24 @@
           <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
             <tr>
               <td style="padding: 40px 40px 20px 40px; text-align: left;">
-                <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-size: 20px; line-height: 26px; color: #333333; font-weight: bold;">YOU'VE BEEN INVITED TO THIS YEARS EVENT</h1>
+                <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-size: 20px; line-height: 26px; color: #333333; font-weight: bold; text-transform: uppercase;">Join
+                  us for World Press Freedom Day of Action</h1>
               </td>
             </tr>
             <tr>
               <td style="padding: 0px 40px 20px 40px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; text-align: left; font-weight:bold;">
-                <p style="margin: 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.</p>
+                <p style="margin: 0;">On World Press Freedom Day Friday May 3, 2019 join the rallies and marches around
+                  the world and in San Francisco to FREE Julian Assange and Chelsea Manning and all jailed journalists
+                  and whistleblowers.</p>
               </td>
             </tr>
             <tr>
               <td style="padding: 0px 40px 20px 40px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; text-align: left; font-weight:normal;">
-                <p style="margin: 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.</p>
+                <p style="margin: 0;">We’ll meet at the British Consulate General San Francisco
+                  <em style="font-size: 13px">(1 Sansome Street)</em> at 4:00 PM and march to the US Federal Building
+                  <em style="font-size: 13px">(90 7th Street)</em> at 4:30 PM.</p>
               </td>
             </tr>
-            <tr>
-              <td style="padding: 0px 40px 20px 40px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; text-align: left; font-weight:normal;">
-                <p style="margin: 0;">Yours sincerely,</p>
-              </td>
-            </tr>
-
-            <tr>
-              <td align="left" style="padding: 0px 40px 40px 40px;">
-
-                <table width="180" align="left">
-                  <tr>
-                    <td width="70">
-                      <img src="http://glennsmith.me/email/litmus/images/profile-picture.png" width="62" height="62" style="margin:0; padding:0; border:none; display:block;" border="0" alt="">
-                    </td>
-                    <td width="110">
-
-                      <table width="" cellpadding="0" cellspacing="0" border="0">
-                        <tr>
-                          <td align="left" style="font-family: sans-serif; font-size:14px; line-height:20px; color:#222222; font-weight:bold;" class="body-text">
-                            <p style="font-family: 'Montserrat', sans-serif; font-size:14px; line-height:20px; color:#222222; font-weight:bold; padding:0; margin:0;" class="body-text">Anna Bella</p>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td align="left" style="font-family: sans-serif; font-size:14px; line-height:20px; color:#666666;" class="body-text">
-                            <p style="font-family: sans-serif; font-size:14px; line-height:20px; color:#666666; padding:0; margin:0;" class="body-text">CEO | Vision</p>
-                          </td>
-                        </tr>
-                      </table>
-
-                    </td>
-                  </tr>
-                </table>
-
-              </td>
-            </tr>
-
           </table>
         </td>
       </tr>
@@ -376,106 +302,81 @@
 
       <!-- AGENDA : BEGIN -->
       <tr>
-        <td bgcolor="#f7fafc">
+        <td bgcolor="#ffffff">
           <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
             <tr>
-              <td style="padding: 40px 40px 20px 40px; text-align: left;">
-                <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-size: 20px; line-height: 26px; color: #333333; font-weight: bold;">AGENDA</h1>
+              <td style="padding: 0px 40px 0px 40px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; text-align: left; font-weight:normal;">
+                <p style="margin: 0;">Our featured speakers include:</p>
               </td>
             </tr>
             <tr>
-              <td style="padding: 0px 40px 35px 40px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; text-align: left; font-weight:normal;">
-                <p style="margin: 0;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.</p>
+              <td style="padding: 0px 40px 15px 40px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; text-align: left; font-weight:normal;">
+                <ul>
+                  <li><b>Peter B. Collins</b>, Journalist and Broadcaster</li>
+                  <li><b>Graham Elwood</b>, Comedian and filmmaker</li>
+                  <li><b>Laura Wells</b>, Green Party Activist</li>
+                  <li><b>Nozomi Hayase</b>, Journalist and writer</li>
+                  <li><b>Steve Zeltzer</b>, Journalist KPFA WorkWeek Radio</li>
+                  <li><b>Ann Garrison</b>, Journalist Black Agenda Report</li>
+                  <li><b>Daniel Borgstrom</b>, Veterans for Peace</li>
+                  <li><b>George Wright</b>, Professor and United Public Workers for Action</li>
+                  <li><b>John Holmes</b>, Retired Member CWA Pacifica Media Workers Guild</li>
+                  <li><b>Richard Becker</b>, ANSWER</li>
+                </ul>
               </td>
             </tr>
-            <tr>
-              <td style="padding: 0px 40px 20px 40px;">
-
-                <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" style="border:1px solid #dddddd; border-left:3px solid #26a4d3;">
-                  <tr>
-                    <td align="" style="padding: 20px 20px 0px 20px; font-family: 'Montserrat', sans-serif; font-size: 14px; line-height: 20px; color: #555555; text-align: left; font-weight:normal;">
-                      <h3 style="margin:0;">
-                        Agenda 1).
-                      </h3>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td align="" style="padding: 20px 20px 20px 20px; font-family: sans-serif; font-size: 14px; line-height: 20px; color: #555555; text-align: left; font-weight:normal;">
-                      <p style="margin:0;">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.
-                      </p>
-                    </td>
-                  </tr>
-                </table>
-
-              </td>
-            </tr>
-            <tr>
-              <td style="padding: 0px 40px 40px 40px;">
-
-                <table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" style="border:1px solid #dddddd; border-left:3px solid #26a4d3;">
-                  <tr>
-                    <td align="" style="padding: 20px 20px 0px 20px; font-family: 'Montserrat', sans-serif; font-size: 14px; line-height: 20px; color: #555555; text-align: left; font-weight:normal;">
-                      <h3 style="margin:0;">
-                        Agenda 2).
-                      </h3>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td align="" style="padding: 20px 20px 20px 20px; font-family: sans-serif; font-size: 14px; line-height: 20px; color: #555555; text-align: left; font-weight:normal;">
-                      <p style="margin:0;">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.
-                      </p>
-                    </td>
-                  </tr>
-                </table>
-
-              </td>
-            </tr>
-
           </table>
         </td>
       </tr>
       <!-- AGENDA : END -->
 
-      <!-- CTA : BEGIN -->
       <tr>
-        <td bgcolor="#26a4d3">
+        <td bgcolor="#ffffff">
           <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
             <tr>
-              <td style="padding: 40px 40px 5px 40px; text-align: center;">
-                <h1 style="margin: 0; font-family: 'Montserrat', sans-serif; font-size: 20px; line-height: 24px; color: #ffffff; font-weight: bold;">ATTENDING OUR EVENT?</h1>
+              <td>
+                <hr style="width: 90%"/>
+              </td>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- CTA : BEGIN -->
+      <tr>
+        <td bgcolor="#ffffff">
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+            <tr>
+              <td style="padding: 20px 40px 20px 40px; font-family: sans-serif; font-size: 17px; line-height: 23px; color: #dd5638; font-weight:bold;" width="10%">
+                <p style="margin: 0;">When:</p>
+              </td>
+              <td style="padding: 20px 40px 20px 40px; font-family: sans-serif; font-size: 17px; line-height: 23px; color: #555555; font-weight:normal;" width="85%">
+                <p style="margin: 0;">May 3, 2019 – 4:00 PM</p>
               </td>
             </tr>
             <tr>
-              <td style="padding: 0px 40px 20px 40px; font-family: sans-serif; font-size: 17px; line-height: 23px; color: #aad4ea; text-align: center; font-weight:normal;">
-                <p style="margin: 0;">Get tickets now before they sell out!</p>
+              <td style="padding: 0px 40px 0px 40px; font-family: sans-serif; font-size: 17px; line-height: 23px; color: #dd5638; font-weight:bold;" width="10%">
+                <p style="margin: 0;">Where:</p>
+              </td>
+              <td style="padding: 0px 40px 0px 40px; font-family: sans-serif; font-size: 17px; line-height: 23px; color: #555555; font-weight:normal;" width="85%">
+                <p style="margin: 0;">British Consulate General San Francisco</p>
               </td>
             </tr>
             <tr>
-              <td valign="middle" align="center" style="text-align: center; padding: 0px 20px 40px 20px;">
-
-                <!-- Button : BEGIN -->
-                <table role="presentation" align="center" cellspacing="0" cellpadding="0" border="0" class="center-on-narrow">
-                  <tr>
-                    <td style="border-radius: 50px; background: #ffffff; text-align: center;" class="button-td">
-                      <a href="http://www.google.com" style="background: #ffffff; border: 15px solid #ffffff; font-family: 'Montserrat', sans-serif; font-size: 14px; line-height: 1.1; text-align: center; text-decoration: none; display: block; border-radius: 50px; font-weight: bold;" class="button-a">
-                        <span style="color:#26a4d3;" class="button-link">&nbsp;&nbsp;&nbsp;&nbsp;GET TICKETS&nbsp;&nbsp;&nbsp;&nbsp;</span>
-                      </a>
-                    </td>
-                  </tr>
-                </table>
-                <!-- Button : END -->
-
+              <td style="padding: 0px 40px 0px 40px; font-family: sans-serif; font-size: 17px; line-height: 23px; color: #555555; font-weight:bold;" width="10%">
+                <p style="margin: 0;"></p>
+              </td>
+              <td style="padding: 0px 40px 0px 40px; font-family: sans-serif; font-size: 17px; line-height: 23px; color: #555555; font-weight:normal;" width="85%">
+                <p style="margin: 0;">1 Sansome Street</p>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 0px 40px 0px 40px; font-family: sans-serif; font-size: 17px; line-height: 23px; color: #555555; font-weight:bold;" width="10%">
+                <p style="margin: 0;"></p>
+              </td>
+              <td style="padding: 0px 40px 40px 40px; font-family: sans-serif; font-size: 17px; line-height: 23px; color: #555555; font-weight:normal;" width="85%">
+                <p style="margin: 0;">San Francisco, CA 94104</p>
               </td>
             </tr>
 
@@ -489,24 +390,20 @@
         <td bgcolor="#292828">
           <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
             <tr>
-              <td style="padding: 30px 30px; text-align: center;">
+              <td style="padding: 20px 30px; text-align: center;">
 
                 <table align="center" style="text-align: center;">
                   <tr>
                     <td>
-                      <img src="http://glennsmith.me/email/litmus/images/facebook.png" width="" height="" style="margin:0; padding:0; border:none; display:block;" border="0" alt="">
+                      <a href="https://www.facebook.com/Free-Julian-Assange-112794885456369/">
+                        <img src="http://bayaction2freeassange.org/wp-content/uploads/2019/04/facebook@3x.png" width="32" height="" style="margin:0; padding:0 20px; border:none; display:block;" border="0" alt="facebook logo">
+                      </a>
                     </td>
                     <td width="10">&nbsp;</td>
                     <td>
-                      <img src="http://glennsmith.me/email/litmus/images/twitter.png" width="" height="" style="margin:0; padding:0; border:none; display:block;" border="0" alt="">
-                    </td>
-                    <td width="10">&nbsp;</td>
-                    <td>
-                      <img src="http://glennsmith.me/email/litmus/images/instagram.png" width="" height="" style="margin:0; padding:0; border:none; display:block;" border="0" alt="">
-                    </td>
-                    <td width="10">&nbsp;</td>
-                    <td>
-                      <img src="http://glennsmith.me/email/litmus/images/linkedin.png" width="" height="" style="margin:0; padding:0; border:none; display:block;" border="0" alt="">
+                      <a href="https://twitter.com/BayAssange">
+                        <img src="http://bayaction2freeassange.org/wp-content/uploads/2019/04/twitter@3x.png" width="42" height="" style="margin:0; padding:0 20px; border:none; display:block;" border="0" alt="twitter logo">
+                      </a>
                     </td>
                   </tr>
                 </table>
@@ -525,22 +422,23 @@
           <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
             <tr>
               <td style="padding: 40px 40px 10px 40px; font-family: sans-serif; font-size: 12px; line-height: 18px; color: #666666; text-align: center; font-weight:normal;">
-                <p style="margin: 0;">%%Company Address%%</p>
+                <p style="margin: 0;">Bay Action Committee to Free Julian Assange</p>
+                <p style="margin: 0;">PO Box 720027 • San Francisco, CA 94172</p>
               </td>
             </tr>
             <tr>
-              <td style="padding: 0px 40px 10px 40px; font-family: sans-serif; font-size: 12px; line-height: 18px; color: #666666; text-align: center; font-weight:normal;">
-                <p style="margin: 0;">This email was sent to you from %%Company Email Address%%</p>
-              </td>
-            </tr>
-            <tr>
-              <td style="padding: 0px 40px 10px 40px; font-family: sans-serif; font-size: 12px; line-height: 18px; color: #666666; text-align: center; font-weight:normal;">
-                <p style="margin: 0;">%%Preferences%% | %%Browser%% | %%Forward%% | %%Unsubscribe%%</p>
+              <td style="padding: 0px 40px 10px 40px; font-family: sans-serif; font-size: 12px; line-height: 18px; color: #666666; text-align: center; font-weight:normal;" class="footer">
+                <p style="margin: 0;">This message was sent to [<%= @email %>] from Bay Action Committee to Free
+                  Julian Assange.</p>
+                <p style="margin: 0;">If you would no longer like to receive these emails, please
+                  <a href="http://bayaction2freeassange.org/san-francisco/world-press-freedom-day-of-action?u=<%= @user_id %>">click
+                    here to unsubscribe</a>.</p>
               </td>
             </tr>
             <tr>
               <td style="padding: 0px 40px 40px 40px; font-family: sans-serif; font-size: 12px; line-height: 18px; color: #666666; text-align: center; font-weight:normal;">
-                <p style="margin: 0;">Copyright &copy; 2015-2017 <b>%%Company Name%%</b>, All Rights Reserved.</p>
+                <p style="margin: 0;">Copyright &copy; 2019 <b>Bay Action Committee to Free Julian Assange</b>, All
+                  Rights Reserved.</p>
               </td>
             </tr>
 
