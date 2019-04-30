@@ -7,7 +7,7 @@ class BactfjaMailer < ActionMailer::Base
     @first_name = options[:first_name]
     @email = options[:email]
     @user_id = options[:user_id]
-    mail(to: "#{@name} <#{@email}>", subject: "#{@first_name} join us for World Press Freedom Day of Action")
+    mail(to: "#{@name} <#{@email}>", subject: "#{@first_name}, Join us for World Press Freedom Day of Action")
   end
 end
 
