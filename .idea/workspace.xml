@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e5448e9-82c6-4430-a87c-a3041ce18888" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/views/bactfja_mailer/event.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/bactfja_mailer/event.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/bactfja_mailer/event_template.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/bactfja_mailer/event_template.html.erb" afterDir="false" />
-    </list>
+    <list default="true" id="2e5448e9-82c6-4430-a87c-a3041ce18888" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/log/" />
@@ -453,16 +450,15 @@
       <option name="presentableId" value="Default" />
       <updated>1550418964037</updated>
       <workItem from="1550418969125" duration="455000" />
-      <workItem from="1556588355508" duration="9276000" />
+      <workItem from="1556588355508" duration="9664000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9731000" />
+    <option name="totallyTimeSpent" value="10119000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25579977" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
