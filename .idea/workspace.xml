@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2e5448e9-82c6-4430-a87c-a3041ce18888" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/views/bactfja_mailer/event.text.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/mailers/bactfja_mailer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/mailers/bactfja_mailer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/bactfja_mailer/event_template.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/bactfja_mailer/event_template.html.erb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -103,11 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/bactfja_mailer/event_template.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1463">
-              <caret line="323" column="26" lean-forward="true" selection-start-line="323" selection-start-column="26" selection-end-line="323" selection-end-column="26" />
+            <state relative-caret-position="305">
+              <caret line="332" column="61" lean-forward="true" selection-start-line="332" selection-start-column="38" selection-end-line="332" selection-end-column="61" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -116,6 +115,7 @@
                 <element signature="n#style#0;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#td#0;n#tr#1;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#2;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#2;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#td#0;n#tr#2;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -155,11 +155,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/bactfja_mailer/event.text.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/bactfja_mailer/event.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="7916" selection-start-column="7916" selection-end-column="7916" />
+              <caret column="7907" lean-forward="true" selection-start-column="7907" selection-end-column="7907" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -168,6 +177,7 @@
                 <element signature="n#style#0;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#td#0;n#tr#1;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#2;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#2;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#td#0;n#tr#2;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -233,8 +243,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Erb File" />
         <option value="Ruby File" />
+        <option value="Erb File" />
       </list>
     </option>
   </component>
@@ -253,9 +263,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/views/bactfja_mailer/event.html.rb" />
-        <option value="$PROJECT_DIR$/app/views/bactfja_mailer/event.html.erb" />
         <option value="$PROJECT_DIR$/app/mailers/bactfja_mailer.rb" />
         <option value="$PROJECT_DIR$/app/views/bactfja_mailer/event_template.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/bactfja_mailer/event.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/bactfja_mailer/event.text.erb" />
       </list>
     </option>
   </component>
@@ -300,13 +311,6 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="bactfja_mailer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myflix-rails" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myflix-rails" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="tedflix_mailer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -444,12 +448,12 @@
       <option name="presentableId" value="Default" />
       <updated>1550418964037</updated>
       <workItem from="1550418969125" duration="455000" />
-      <workItem from="1556588355508" duration="18399000" />
+      <workItem from="1556588355508" duration="20038000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18854000" />
+    <option name="totallyTimeSpent" value="20493000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
@@ -468,7 +472,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3297062" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.35908598" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.32941177" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -579,10 +583,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/mailers/bactfja_mailer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="84" selection-start-line="9" selection-start-column="84" selection-end-line="9" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/bactfja_mailer/event.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="7916" selection-start-column="7916" selection-end-column="7916" />
+          <caret column="7907" lean-forward="true" selection-start-column="7907" selection-end-column="7907" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -591,6 +602,7 @@
             <element signature="n#style#0;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#td#0;n#tr#1;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#2;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#2;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#td#0;n#tr#2;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -627,17 +639,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/mailers/bactfja_mailer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="84" selection-start-line="9" selection-start-column="84" selection-end-line="9" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/bactfja_mailer/event_template.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1463">
-          <caret line="323" column="26" lean-forward="true" selection-start-line="323" selection-start-column="26" selection-end-line="323" selection-end-column="26" />
+        <state relative-caret-position="305">
+          <caret line="332" column="61" lean-forward="true" selection-start-line="332" selection-start-column="38" selection-end-line="332" selection-end-column="61" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -646,6 +651,7 @@
             <element signature="n#style#0;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#0;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#td#0;n#tr#1;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#2;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h1#0;n#td#0;n#tr#0;n#table#0;n#td#0;n#tr#2;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#td#0;n#tr#2;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -681,6 +687,13 @@
             <element signature="n#style#0;n#p#0;n#td#0;n#tr#1;n#table#0;n#td#0;n#tr#7;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#td#0;n#tr#1;n#table#0;n#td#0;n#tr#7;n#table#0;n#div#1;n#center#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/bactfja_mailer/event.text.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
