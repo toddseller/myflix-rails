@@ -42,7 +42,7 @@ class BactfjaMailer < ActionMailer::Base
     mail(to: "#{@name} <#{@email}>", subject: "#{@first_name}, Don't miss out on these upcoming events around the Bay!")
   end
 
-  def unsubscribe(options = {})
+  def informational_announcement(options = {})
     @name = options[:full_name]
     @first_name = options[:first_name]
     @email = options[:email]
