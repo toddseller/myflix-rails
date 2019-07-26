@@ -55,7 +55,7 @@ class BactfjaMailer < ActionMailer::Base
     @first_name = options[:first_name]
     @email = options[:email]
     @uuid = options[:uuid]
-    mail(to: "#{@name} <#{@email}>", subject: "#{@first_name}, Rally against U.S. Extradition for Julian on July 31st!")
+    mail(to: "#{@name} <#{@email}>", subject: "#{@first_name}, Rally against U.S. Extradition of Julian on July 31st!")
   end
 end
 
