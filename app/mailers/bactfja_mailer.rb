@@ -65,5 +65,13 @@ class BactfjaMailer < ActionMailer::Base
     @uuid = options[:uuid]
     mail(to: "#{@name} <#{@email}>", subject: "#{@first_name}, Stand 4 Julian & Chelsea!")
   end
+
+  def event_9_28(options = {})
+    @name = options[:full_name]
+    @first_name = options[:first_name]
+    @email = options[:email]
+    @uuid = options[:uuid]
+    mail(to: "#{@name} <#{@email}>", subject: "#{@first_name}, Solidarity Actions 4 Julian & Chelsea!")
+  end
 end
 
