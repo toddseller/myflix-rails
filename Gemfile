@@ -29,7 +29,7 @@ gem 'devise'
 # User Friendly_id for prettier URLs
 gem 'friendly_id'
 # Using Bootstrap to simplify some styling
-gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'bootstrap', '~> 4.1.3'
 # Bootstrap requires Tether
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
