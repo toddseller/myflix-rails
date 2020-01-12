@@ -14,7 +14,7 @@ gem 'rails', '~> 5.1.2'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use Puma as the app server
-gem 'puma', '~> 3.7'
+gem 'puma', '~> 4.3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -29,7 +29,7 @@ gem 'devise'
 # User Friendly_id for prettier URLs
 gem 'friendly_id'
 # Using Bootstrap to simplify some styling
-gem "bootstrap", ">= 4.3.1"
+gem "bootstrap", "~> 4.3.1"
 # Bootstrap requires Tether
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
