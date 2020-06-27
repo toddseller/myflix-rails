@@ -97,5 +97,13 @@ class BactfjaMailer < ActionMailer::Base
     @uuid = options[:uuid]
     mail(to: "#{@name} <#{@email}>", subject: "#{@first_name}, Join us for an online panel featuring Nozomi Hayase!")
   end
+
+  def event_7_3_20(options = {})
+    @name = options[:full_name]
+    @first_name = options[:first_name]
+    @email = options[:email]
+    @uuid = options[:uuid]
+    mail(to: "#{@name} <#{@email}>", subject: "#{@first_name}, Join us for a Global Birthday Vigil")
+  end
 end
 
