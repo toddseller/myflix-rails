@@ -122,7 +122,7 @@ class BactfjaMailer < ActionMailer::Base
     mail(to: "#{@name} <#{@email}>", subject: "#{@first_name}, Join us for a Human Rights Day Protest")
   end
 
-  def event_12_10_12_11_20(options = {})
+  def event_12_10_12_11(options = {})
     @name = options[:full_name]
     @first_name = options[:first_name]
     @email = options[:email]
