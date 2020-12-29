@@ -145,5 +145,13 @@ class BactfjaMailer < ActionMailer::Base
     @uuid = options[:uuid]
     mail(to: "#{@name} <#{@email}>", subject: "#{@first_name}, Join us in support of Julian Assange")
   end
+
+  def event_1_4_21_reminder(options = {})
+    @name = options[:full_name]
+    @first_name = options[:first_name]
+    @email = options[:email]
+    @uuid = options[:uuid]
+    mail(to: "#{@name} <#{@email}>", subject: "#{@first_name}, Join us in support of Julian Assange here and across the US")
+  end
 end
 
