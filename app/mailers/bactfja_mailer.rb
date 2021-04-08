@@ -161,5 +161,13 @@ class BactfjaMailer < ActionMailer::Base
     @uuid = options[:uuid]
     mail(to: "#{@name} <#{@email}>", subject: "#{@first_name}, A Global Day of Protest in support of Julian Assange")
   end
+
+  def event_4_11_21_online(options = {})
+    @name = options[:full_name]
+    @first_name = options[:first_name]
+    @email = options[:email]
+    @uuid = options[:uuid]
+    mail(to: "#{@name} <#{@email}>", subject: "#{@first_name}, New Online Zoom Event in Support of Julian Assange on Sunday, April 11th at 5:00PM PDT.")
+  end
 end
 
