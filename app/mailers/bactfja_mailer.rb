@@ -39,7 +39,7 @@ class BactfjaMailer < ActionMailer::Base
     @first_name = options[:first_name]
     @email = options[:email]
     @uuid = options[:uuid]
-    mail(to: "#{@name} <#{@email}>", subject: "#{@first_name}, Don't miss out on these upcoming events around the Bay!")
+    mail(to: "#{@name} <#{@email}>", subject: "#{@first_name}, Save the date for a Global Day of Education at historic Sproul Plaza!")
   end
 
   def informational_announcement(options = {})
