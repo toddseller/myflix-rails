@@ -30,7 +30,7 @@
 #   end  
 # end
 class MyflixMailer < ActionMailer::Base
-  default from: 'Myflix <info@myflix.stream>'
+  default from: 'Myflix <noreply@myflix.stream>'
   layout 'mailer'
 
   def for_you(options = {})
