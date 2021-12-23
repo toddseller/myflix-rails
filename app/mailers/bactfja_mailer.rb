@@ -186,6 +186,14 @@ class BactfjaMailer < ActionMailer::Base
     mail(to: "#{@name} <#{@email}>", subject: "#{@first_name}, Calling all KPFA members and Julian Assange Supporters!")
   end
 
+  def online_vigil(options = {})
+    @name = options[:full_name]
+    @first_name = options[:first_name]
+    @email = options[:email]
+    @uuid = options[:uuid]
+    mail(to: "#{@name} <#{@email}>", subject: "#{@first_name}, Join Us Christmas Eve for An Online Candlelight Vigil!")
+  end
+
   def assangedefense(options = {})
     @name = options[:full_name]
     @first_name = options[:first_name]
