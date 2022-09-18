@@ -215,9 +215,15 @@ class BactfjaMailer < ActionMailer::Base
     @first_name = options[:first_name]
     @email = options[:email]
     @uuid = options[:uuid]
-    mail(to: "#{@name} <#{@email}>", subject: "#{@first_name}, Volunteers are still needed!")
+    mail(to: "#{@name} <#{@email}>", subject: "#{@first_name}, Press Release for Upcoming Protest!")
   end
 
   def urgent_volunteers(options = {})
+    @name = options[:full_name]
+    @first_name = options[:first_name]
+    @email = options[:email]
+    @uuid = options[:uuid]
+    mail(to: "#{@name} <#{@email}>", subject: "#{@first_name}, Volunteers are still needed!")
+  end
 end
 
