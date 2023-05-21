@@ -233,5 +233,13 @@ class BactfjaMailer < ActionMailer::Base
     @uuid = options[:uuid]
     mail(to: "#{@name} <#{@email}>", subject: "#{@first_name}, Flyering Action Cancelled!")
   end
+
+  def upcoming_events_10_8_22(options = {})
+    @name = options[:full_name]
+    @first_name = options[:first_name]
+    @email = options[:email]
+    @uuid = options[:uuid]
+    mail(to: "#{@name} <#{@email}>", subject: "#{@first_name}, Don't Miss the Upcoming Worldwide Solidarity Event!")
+  end
 end
 
